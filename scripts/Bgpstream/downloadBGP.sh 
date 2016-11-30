@@ -1,0 +1,33 @@
+function download {
+
+Le=$1
+Pr=$2
+Et=$4
+St=$3
+echo $Le
+
+python print-prefix.py $Le$ $Pr $St $Et > $Le"_BGPUpdates_route-views2_June25th"
+
+}
+# 1466877600..1466906400 june25th attack
+#startTime = 1448841600 nove30th attack
+#endTime = 1449003600
+
+startTime=1466877600
+#endTime=1466906400
+endTime=1466906400 #26-06-2016 05:00:00 UTC
+download A '198.41.0.4/24' $startTime $endTime
+download B '192.228.79.201/24' $startTime $endTime
+download C '192.33.4.12/24' $startTime $endTime
+download D '199.7.91.13/24' $startTime $endTime
+download E '192.203.230.10/24' $startTime $endTime
+download F '192.5.5.241/24' $startTime $endTime
+download G '192.112.36.4/24' $startTime $endTime
+download H '198.97.190.53/24' $startTime $endTime
+download I '192.36.148.17/24' $startTime $endTime
+download J '192.58.128.30/24' $startTime $endTime
+download K '193.0.14.129/24' $startTime $endTime
+download L '199.7.83.42/24' $startTime $endTime
+download M '202.12.27.33/24' $startTime $endTime
+
+
